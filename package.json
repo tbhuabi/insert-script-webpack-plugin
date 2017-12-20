@@ -1,0 +1,33 @@
+{
+  "name": "insert-script-webpack-plugin",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "start": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack plugin",
+    "insert script",
+  ],
+  "author": {
+    "name": "Tan Bo",
+    "email": "464328895@qq.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "webpack": ">=2.0.0",
+    "html-webpack-plugin": ">=2.0.0"
+  },
+  "engines": {
+    "node": ">=v6.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbhuabi/insert-script-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbhuabi/insert-script-webpack-plugin/issues"
+  }
+}
