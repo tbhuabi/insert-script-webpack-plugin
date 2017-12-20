@@ -3,10 +3,10 @@ function InsertScriptWebpackPlugin(options) {
 }
 
 InsertScriptWebpackPlugin.prototype.apply = function (compiler) {
-    let paths = this.options.paths || [];
+    var paths = this.options.paths || [];
     compiler.plugin('compilation', function (compilation) {
         compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
-            for (let i = paths.length - 1; i >= 0; i--) {
+            for (var i = paths.length - 1; i >= 0; i--) {
                 htmlPluginData.assets.js.unshift(paths[i]);
             }
             callback(null, htmlPluginData);
